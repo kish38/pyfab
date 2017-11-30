@@ -4,4 +4,4 @@ def get_name():
     local('uname -a') 
 
 def sample():
-    run('getting things done')
+    run('pwd')
