@@ -1,4 +1,4 @@
-from fabric.api import local
+from fabric.api import local, run
 
 def get_name():
     local('uname -a') 
