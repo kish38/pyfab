@@ -60,4 +60,11 @@ def update_package(package_name):
     with hide('output', 'running', 'warnings', 'aborts', 'status'), settings(warn_only=True):
         fastprint(sudo(command='yum update -y '+package_name))
 
+@task
+def get_basic_metrics():
+    get_os_details()
+    get_cpu_usage()
+    get_disk_space()
+    get_kernel_details
+
 
